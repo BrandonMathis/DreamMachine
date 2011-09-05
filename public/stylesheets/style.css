@@ -1,0 +1,27 @@
+body{
+  background-color: #1b1b24;
+  background-image: url(/images/background-seigaiha.png);
+  background-position: left top, left top;
+  background-repeat: repeat-x;
+  height: 488px;
+  color: #9391ac;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+a{
+  color: #9587EB;
+  text-decoration: none;
+}
+
+select,
+input,
+textarea{
+  -webkit-border-radius: 3px;
+  background-color: #C9C3E6;
+}
+
+textarea{
+  width: 700px;
+}

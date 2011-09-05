@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Body:
+  = @dream.body
+%p
+  %b Date:
+  = @dream.date
+
+= link_to 'Edit', edit_dream_path(@dream)
+\|
+= link_to 'Back', dreams_path

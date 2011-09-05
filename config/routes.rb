@@ -1,4 +1,6 @@
 DreamMachine::Application.routes.draw do
+  resources :dreams
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

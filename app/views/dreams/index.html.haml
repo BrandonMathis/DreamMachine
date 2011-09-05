@@ -1,0 +1,21 @@
+%h1 Listing dreams
+
+%table
+  %tr
+    %th Body
+    %th Date
+    %th
+    %th
+    %th
+
+  - @dreams.each do |dream|
+    %tr
+      %td= dream.body
+      %td= dream.date
+      %td= link_to 'Show', dream
+      %td= link_to 'Edit', edit_dream_path(dream)
+      %td= link_to 'Destroy', dream, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Dream', new_dream_path
