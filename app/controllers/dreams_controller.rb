@@ -40,8 +40,8 @@ class DreamsController < ApplicationController
   # POST /dreams
   # POST /dreams.xml
   def create
-    @dream = Dream.new(params[:dream])
-
+    date = filter_time(params[:dream], :date)
+    @dream = Dream.new(:body => params[:dream][:body], :date => date)
     respond_to do |format|
       if @dream.save
         format.html { redirect_to(@dream, :notice => 'Dream was successfully created.') }

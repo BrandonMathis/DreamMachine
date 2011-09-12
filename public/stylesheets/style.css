@@ -8,6 +8,7 @@ body{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
+  font-family: Museo-300;
 }
 
 a{
@@ -23,5 +24,16 @@ textarea{
 }
 
 textarea{
-  width: 700px;
+  width: 500px;
+}
+
+table{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content{
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
