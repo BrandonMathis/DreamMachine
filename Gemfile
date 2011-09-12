@@ -28,6 +28,8 @@ gem 'rails', '3.0.9'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem "rake", "0.8.7"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "bson_ext"
