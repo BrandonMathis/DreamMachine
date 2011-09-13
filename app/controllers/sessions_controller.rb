@@ -14,6 +14,6 @@ class SessionsController < ApplicationController
 
   def delete
     logout
-    redirect_to root_url, :notice => "Logged In!"
+    redirect_to root_url, :notice => "Logged Out!"
   end
 end

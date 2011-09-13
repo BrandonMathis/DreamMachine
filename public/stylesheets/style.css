@@ -37,3 +37,27 @@ table{
   margin: auto;
   text-align: center;
 }
+
+@-webkit-keyframes fade {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+body #dream_feed{
+  padding: 10px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: #9587EB 3px solid;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.dream{
+  margin: 5px;
+}
