@@ -1,4 +1,6 @@
 class DreamsController < ApplicationController
+  before_filter :require_login, :only => [ :create, :new ]
+
   # GET /dreams
   # GET /dreams.xml
   def index
