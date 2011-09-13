@@ -3,19 +3,17 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.authenticate( params[:name], params[:password])
-
+    user = login(params[:username], params[:password], params[:remember_me])
     if user
-      session[:user_id] = user.id
-      redirect_to root_url, :notice => "Logged In!"
+      redirect_back_or_to root_url, :notice => "Logged In!"
     else
       flash.now.alert = "Invalid name or password"
-      render "new"
+      render :new
     end
   end
 
   def delete
-    session[:user_id] = nil
+    logout
     redirect_to root_url, :notice => "Logged In!"
   end
 end

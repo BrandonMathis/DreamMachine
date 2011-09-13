@@ -2,11 +2,9 @@ class ApplicationController < ActionController::Base
   include MultiParameterAttributes
 
   protect_from_forgery
-  helper_method :current_user
 
   private
-
-  def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  def not_authenticated
+    redirect_to login_url, :alert => "First login to access this page"
   end
 end

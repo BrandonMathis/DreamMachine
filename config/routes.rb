@@ -3,9 +3,9 @@ DreamMachine::Application.routes.draw do
   resources :users
   resources :sessions
 
-  get "sign_up" => "users#new", :as => "sign_up"
-  get "log_in" => "sessions#new", :as => "log_in"
-  get "log_out" => "sessions#delete", :as => "log_out"
+  get "signup" => "users#new", :as => "signup"
+  get "login" => "sessions#new", :as => "login"
+  get "logout" => "sessions#delete", :as => "logout"
 
   root :to => "dreams#index"
 end
