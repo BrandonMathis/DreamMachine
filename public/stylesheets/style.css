@@ -49,7 +49,6 @@ table{
 
 body #dream_feed{
   padding: 10px;
-  -moz-border-radius: 5px;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.7s;
   -webkit-animation-iteration-count: 1;
@@ -66,4 +65,15 @@ body #dream_feed{
   font-size:40px;
   padding: 5px;
   font-family: Georgia;
+}
+
+#stars img{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
 }
