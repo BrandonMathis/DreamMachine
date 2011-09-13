@@ -6,7 +6,7 @@ body{
   height: 488px;
   color: #9391ac;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
+  font-size:   14px;
   line-height: 18px;
   font-family: Museo-300;
 }
@@ -50,8 +50,6 @@ table{
 body #dream_feed{
   padding: 10px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: #9587EB 3px solid;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.7s;
   -webkit-animation-iteration-count: 1;
@@ -60,4 +58,12 @@ body #dream_feed{
 
 .dream{
   margin: 5px;
+}
+
+.dream p:first-letter 
+{
+  color: #8A2BE2;
+  font-size:40px;
+  padding: 5px;
+  font-family: Georgia;
 }

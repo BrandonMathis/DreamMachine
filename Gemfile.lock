@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/NoamB/sorcery.git
-  revision: 89b88f570284959b951b99f2d6610ea4486461f5
+  revision: 28407623afb5d0c37d6b63ae05d4709e5965dc6f
   specs:
     sorcery (0.6.1)
       bcrypt-ruby (~> 3.0.0)
@@ -51,7 +51,7 @@ GEM
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
-      rack (< 2, >= 1.1.0)
+      rack (>= 1.1.0, < 2)
     haml (3.1.3)
     haml-rails (0.3.4)
       actionpack (~> 3.0)

@@ -1,7 +1,8 @@
 #dream_feed
   - @dreams.each do |dream|
+    =image_tag "/images/border_top.png"
     .dream
-      .text
+      %p.text
         = dream.body
       -if current_user
         .dream_admin
@@ -10,3 +11,4 @@
           = link_to 'Destroy', dream, :confirm => 'Are you sure?', :method => :delete
           \|
           = link_to 'Create Dream', new_dream_path
+    =image_tag "/images/border_bottom.png"
