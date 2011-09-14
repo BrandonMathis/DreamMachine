@@ -27,13 +27,8 @@ textarea{
   width: 500px;
 }
 
-table{
-  margin: 0 auto;
-  text-align: center;
-}
-
 #content{
-  width: 50%;
+  width: 800px;
   margin: auto;
   text-align: center;
 }
@@ -48,7 +43,6 @@ table{
 }
 
 body #dream_feed{
-  padding: 10px;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.7s;
   -webkit-animation-iteration-count: 1;
